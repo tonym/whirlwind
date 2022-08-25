@@ -1,0 +1,24 @@
+{
+  "name": "whirlwind",
+  "description": "Whirlwind Design System",
+  "author": "Tony M",
+  "version": "0.0.0",
+  "license": "MIT",
+  "homepage": "https://github.com/tonym/whirlwind",
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonym/whirlwind.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tonym/whirlwind/issues"
+  },
+  "dependencies": {
+    "jss": "^10.9.2",
+    "jss-preset-default": "^10.9.2",
+    "redux": "^4.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
