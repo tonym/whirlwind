@@ -1,6 +1,8 @@
-import { StyleSheet } from 'jss';
+import { StyleSheet as StyleSheetJSS } from 'jss';
 
 export const ADD_SHEET = 'ADD_SHEET';
+
+export type StyleSheet = StyleSheetJSS;
 
 export type Sheet<K extends keyof any, StyleSheet> = { [P in K]: StyleSheet };
 
