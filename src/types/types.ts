@@ -1,5 +1,7 @@
 import { StyleSheet as StyleSheetJSS } from 'jss';
 
+export interface Theme {}
+
 export const ADD_SHEET = 'ADD_SHEET';
 
 export type StyleSheet = StyleSheetJSS;
@@ -17,4 +19,5 @@ export type Svg = { [k: string]: string };
 
 export interface State {
   sheets: Sheet<string, StyleSheet>;
+  theme: Theme;
 }

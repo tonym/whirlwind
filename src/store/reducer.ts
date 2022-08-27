@@ -1,7 +1,8 @@
 import { ActionTypes, ADD_SHEET, State } from '../types/index';
 
 export const initialState: State = {
-  sheets: {}
+  sheets: {},
+  theme: {}
 };
 
 export function reducer(
