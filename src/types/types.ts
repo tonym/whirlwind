@@ -15,8 +15,6 @@ interface AddSheetAction {
 
 export type ActionTypes = AddSheetAction;
 
-export type Svg = { [k: string]: string };
-
 export interface State {
   sheets: Sheet<string, StyleSheet>;
   theme: Theme;
