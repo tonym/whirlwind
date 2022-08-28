@@ -2,7 +2,7 @@ import createStylesheet from './createStylesheet';
 
 const styles = {
   body: {
-    backgroundColor: '#f2f2f2'
+    margin: 'auto'
   }
 };
 
@@ -16,6 +16,6 @@ describe('createStylesheet', () => {
   });
 
   it('should create valid CSS from JSS', () => {
-    expect(styleRule.toString()).toMatch('background-color: #f2f2f2;');
+    expect(styleRule.toString()).toMatch('margin: auto;');
   });
 });
