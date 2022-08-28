@@ -9,10 +9,10 @@ const options: StyleSheetFactoryOptions = {
 const stylesheet: StyleSheet = createStylesheet({}, options);
 
 describe('Actions', () => {
-  it(ADD_SHEET, () => {
+  it(`should create an ${ADD_SHEET} action`, () => {
     const key = options.meta || '';
     const sheet = { [key]: stylesheet };
     const action = addSheet(sheet);
-    expect(action).toEqual({ type: ADD_SHEET, sheet: sheet });
+    expect(action).toEqual({ type: ADD_SHEET, sheet });
   });
 });
