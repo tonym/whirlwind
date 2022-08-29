@@ -5,19 +5,17 @@ import { terser } from 'rollup-plugin-terser';
 import typescript from '@rollup/plugin-typescript';
 
 const baseContents = pkg => ({
-  name: pkg.name,
-  description: pkg.description,
   author: pkg.author,
-  version: pkg.version,
-  license: pkg.license,
-  homepage: pkg.homepage,
-  main: './node/whirlwind.js',
-  repository: pkg.repository,
   bugs: pkg.bugs,
   dependencies: {},
-  peerDependencies: pkg.peerDependencies,
-  peerDependenciesMeta: pkg.peerDependenciesMeta,
-  sideEffects: false
+  description: pkg.description,
+  homepage: pkg.homepage,
+  license: pkg.license,
+  main: './node/whirlwind.js',
+  name: pkg.name,
+  repository: pkg.repository,
+  sideEffects: false,
+  version: pkg.version
 });
 
 const external = ['jss', 'jss-preset-default', 'redux'];
