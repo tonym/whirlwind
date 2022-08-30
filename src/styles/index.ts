@@ -3,3 +3,6 @@ export * from './createStylesheet/index';
 
 export { default as defaultTheme } from './defaultTheme/index';
 export * from './defaultTheme/index';
+
+export { default as provideStylesheet } from './provideStylesheet/index';
+export * from './provideStylesheet/index';
