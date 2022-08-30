@@ -5,7 +5,7 @@ import fromCamelToDash from '../../helpers/fromCamelToDash/index';
 
 const styleSheetFactoryOptions: StyleSheetFactoryOptions = {
   index: 5,
-  meta: 'MStyles'
+  meta: 'Styles'
 };
 
 export default function provideStylesheet(styles: Styles, options: StyleSheetFactoryOptions = {}): StyleSheet {
