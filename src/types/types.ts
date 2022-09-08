@@ -16,8 +16,6 @@ export type Styles = StylesJSS | CSSProperties;
 
 export type StyleSheet = StyleSheetJSS;
 
-export interface Theme {}
-
 export const ADD_SHEET = 'ADD_SHEET';
 
 export type Sheet<K extends keyof any, StyleSheet> = { [P in K]: StyleSheet };
@@ -32,4 +30,34 @@ export type ActionTypes = AddSheetAction;
 export interface State {
   sheets: Sheet<string, StyleSheet>;
   theme: Theme;
+}
+
+export interface PaletteColor {
+  alternate: string;
+  color: string;
+  hover: string;
+}
+
+export interface Palette {
+  primary: PaletteColor;
+  secondary: PaletteColor;
+}
+
+export interface PaletteOptions {
+  primary?: Partial<PaletteColor>;
+  secondary?: Partial<PaletteColor>;
+}
+
+export interface Shape {
+  borderRadius: string | number;
+}
+
+export interface Theme {
+  palette: Palette;
+  shape: Shape;
+}
+
+export interface ThemeOptions {
+  palette?: PaletteOptions;
+  shape?: Partial<Shape>;
 }
