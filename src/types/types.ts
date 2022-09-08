@@ -59,5 +59,5 @@ export interface Theme {
 
 export interface ThemeOptions {
   palette?: PaletteOptions;
-  shape?: Partial<Shape>;
+  shape?: Shape;
 }
