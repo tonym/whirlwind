@@ -1,3 +1,6 @@
+export { default as createStyles } from './createStyles/index';
+export * from './createStyles/index';
+
 export { default as createStylesheet } from './createStylesheet/index';
 export * from './createStylesheet/index';
 
