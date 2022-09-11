@@ -9,3 +9,6 @@ export * from './defaultTheme/index';
 
 export { default as provideStylesheet } from './provideStylesheet/index';
 export * from './provideStylesheet/index';
+
+export { default as provideTheme } from './provideTheme/index';
+export * from './provideTheme/index';

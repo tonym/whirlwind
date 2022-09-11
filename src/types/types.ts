@@ -17,6 +17,7 @@ export type Styles = StylesJSS | CSSProperties;
 export type StyleSheet = StyleSheetJSS;
 
 export const ADD_SHEET = 'ADD_SHEET';
+export const SET_THEME = 'SET_THEME';
 
 export type Sheet<K extends keyof any, StyleSheet> = { [P in K]: StyleSheet };
 
@@ -25,7 +26,12 @@ interface AddSheetAction {
   sheet: Sheet<string, StyleSheet>;
 }
 
-export type ActionTypes = AddSheetAction;
+interface SetThemeAction {
+  type: typeof SET_THEME;
+  theme: Theme;
+}
+
+export type ActionTypes = AddSheetAction | SetThemeAction;
 
 export interface State {
   sheets: Sheet<string, StyleSheet>;

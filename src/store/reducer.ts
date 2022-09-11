@@ -1,4 +1,4 @@
-import { ActionTypes, ADD_SHEET, State } from '../types/index';
+import { ActionTypes, ADD_SHEET, SET_THEME, State } from '../types/index';
 
 export const initialState: State = {
   sheets: {},
@@ -26,6 +26,8 @@ export function reducer(state: State = initialState, action: ActionTypes): State
     case ADD_SHEET:
       const sheets = { ...state.sheets, ...action.sheet };
       return { ...state, sheets: sheets };
+    case SET_THEME:
+      return { ...state, theme: action.theme };
     default:
       return state;
   }
