@@ -13,7 +13,9 @@ describe('provideTheme', () => {
 
   it('should provide a theme from theme options', () => {
     const themeOptions: ThemeOptions = {
-      direction: 'rtl'
+      shape: {
+        borderRadius: 6
+      }
     };
     provideTheme(themeOptions);
     const providedTheme = useTheme();
@@ -24,7 +26,9 @@ describe('provideTheme', () => {
   it('should provide a theme from an array of theme options', () => {
     const themeOptions: ThemeOptions[] = [];
     themeOptions.push({
-      direction: 'rtl'
+      shape: {
+        borderRadius: 12
+      }
     });
     themeOptions.push({
       shape: {
@@ -32,7 +36,6 @@ describe('provideTheme', () => {
       }
     });
     const mergedThemeOptions: ThemeOptions = {
-      direction: 'rtl',
       shape: {
         borderRadius: 6
       }
